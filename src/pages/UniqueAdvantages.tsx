@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Clock, Infinity, Users, ShieldCheck } from 'lucide-react';
+import { ArrowLeft, Clock, Users, ShieldCheck } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { GoldButton } from '../App';
 
@@ -12,11 +12,6 @@ const UniqueAdvantages = () => {
       title: '5 שעות ביום',
       desc: 'איזון עבודה-בית אופטימלי המאפשר ריכוז שיא ושימור אנרגיה לאורך זמן.',
       icon: <Clock className="text-gold" size={32} />
-    },
-    {
-      title: 'עבודה רציפה 24/6',
-      desc: 'מענה טכנולוגי זמין ורציף המבטיח שקט תעשייתי וזמינות גבוהה ללקוחותינו.',
-      icon: <Infinity className="text-gold" size={32} />
     },
     {
       title: 'קהילה תומכת',

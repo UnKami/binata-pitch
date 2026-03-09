@@ -8,14 +8,14 @@ const AcademyTrack = () => {
   const navigate = useNavigate();
   const phases = [
     {
-      title: 'שלב א׳: האקדמיה (הווה)',
+      title: 'שלב א׳: האקדמיה',
       subtitle: 'הכשרה אינטנסיבית ויישומית',
       icon: <BookOpen className="text-gold" size={32} />,
       items: [
-        'קורסי AI ופיתוח תוכנה מתקדמים',
-        'למידה מבוססת פרויקטים (PBL)',
-        'ליווי צמוד של מנטוריות מהתעשייה',
-        'הכשרה מותאמת אישית לאורח החיים החרדי'
+        'ליווי צמוד של מנטוריות מהתעשייה והאקדמיה.',
+        'קורסי AI ופיתוח תוכנה מתקדמים.',
+        'שילוב בפרויקטים תעשייתיים אמיתיים כבר בשלב הלמידה.',
+        'הכשרה מותאמת אישית לאורח החיים החרדי.'
       ]
     },
     {
@@ -23,10 +23,9 @@ const AcademyTrack = () => {
       subtitle: 'חיבור למוקדי ידע עולמיים',
       icon: <Globe className="text-gold" size={32} />,
       items: [
-        'אירוח מרצים ומומחים מובילים מחו"ל',
-        'הענקת תעודות הסמכה בינלאומיות',
-        'שיתופי פעולה עם אוניברסיטאות מובילות בעולם',
-        'סמינרים מקצועיים וסדנאות אמן'
+        'אירוח מרצים ומומחים מובילים מחו"ל.',
+        'סמינרים וסדנאות מקצועיים.',
+        'שילוב במחקר ופיתוח פטנטים.'
       ]
     },
     {
@@ -117,7 +116,7 @@ const AcademyTrack = () => {
           <div className="mt-20 glass p-12 rounded-3xl border border-gold/20 text-center relative overflow-hidden">
             <div className="absolute inset-0 bg-gold/5 pointer-events-none" />
             <Award className="text-gold mx-auto mb-6" size={64} />
-            <h2 className="text-3xl font-bold text-white mb-6">הסמכה בינלאומית ומחקר</h2>
+            <h2 className="text-3xl font-bold text-white mb-6">התפתחות בינלאומית ומחקר</h2>
             <p className="text-gray-300 text-lg leading-relaxed max-w-2xl mx-auto mb-10">
               הבוגרות שלנו לא רק מקבלות ידע, אלא הופכות לחלק מקהילה אקדמית גלובלית. שיתופי הפעולה שלנו עם מומחים מחו"ל מבטיחים שכל תעודה וכל מחקר שיוצא מבינתה יעמוד בסטנדרטים הגבוהים ביותר בעולם.
             </p>

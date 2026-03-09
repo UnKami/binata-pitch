@@ -7,7 +7,7 @@ import { GoldButton } from '../App';
 const SodaPartner = () => {
   const navigate = useNavigate();
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-gray-200 font-sans selection:bg-gold selection:text-black pb-20">
+    <div className="min-h-screen bg-[#0a0a0a] text-gray-200 font-sans selection:bg-gold selection:text-black pb-20" dir="rtl">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 glass border-b border-white/5">
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
@@ -15,11 +15,11 @@ const SodaPartner = () => {
             onClick={() => navigate(-1)}
             className="text-2xl font-bold text-gold tracking-widest font-serif flex items-center gap-2 hover:text-white transition-colors"
           >
-            <ArrowLeft size={20} />
+            <ArrowLeft size={20} className="rotate-180" />
             <span>BINATAH</span>
           </button>
-          <div className="text-sm font-medium text-gold uppercase tracking-widest">
-            Strategic Partner: Soda
+          <div className="text-sm font-medium text-gold uppercase tracking-widest hidden md:block">
+            שותף אסטרטגי: סודה
           </div>
         </div>
       </nav>
@@ -34,9 +34,9 @@ const SodaPartner = () => {
             <div className="w-32 h-32 rounded-3xl bg-gold/10 border border-gold/20 flex items-center justify-center flex-shrink-0">
               <Shield size={64} className="text-gold" />
             </div>
-            <div className="text-center md:text-left">
+            <div className="text-center md:text-right">
               <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 font-serif italic">Soda</h1>
-              <p className="text-gold font-mono uppercase tracking-widest">Strategic Technology Partner</p>
+              <p className="text-gold font-mono uppercase tracking-widest">שותף טכנולוגי אסטרטגי</p>
             </div>
           </div>
 
@@ -45,20 +45,20 @@ const SodaPartner = () => {
               <Zap className="text-gold" />
               <span>השותפות עם בינתה</span>
             </h2>
-            <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-8 text-right" dir="rtl">
+            <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-8">
               חברת סודה מביאה עמה כ-13 שנות מומחיות במנועי בינה מלאכותית (AI) ואוטומציה. פיתוח הדגל האחרון של החברה הוא מערכת הגנת סייבר מתקדמת המבוססת על סוכני AI המחוברים למערכות SIEM. סוכנים אלו מנטרים, מנתחים אירועים משלב המניעה ועד לתגובה, ומספקים המלצות מדויקות לצוותי ההגנה (Blue Team) בכפוף לרגולציה ולמדיניות החברה. בעת התקפה מסיבית, המערכת מזניקה אוטומטית אלפי סוכנים לפעולת בלימה והגנה, תוך עצירה לאישור מנהלים בצמתי החלטה קריטיים, מה שמבטיח שליטה מלאה והגנה הרמטית.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
               <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
                 <Shield className="text-gold mb-4" size={32} />
-                <h3 className="text-white font-bold mb-2">Cyber Security AI</h3>
-                <p className="text-sm text-gray-400">Advanced AI agents for SIEM integration and automated threat response.</p>
+                <h3 className="text-white font-bold mb-2">הגנת סייבר מבוססת AI</h3>
+                <p className="text-sm text-gray-400">סוכני AI מתקדמים לאינטגרציה עם מערכות SIEM ותגובה אוטומטית לאיומים.</p>
               </div>
               <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
                 <Cpu className="text-gold mb-4" size={32} />
-                <h3 className="text-white font-bold mb-2">13 Years Expertise</h3>
-                <p className="text-sm text-gray-400">A decade of experience in AI engines, automation, and complex system architecture.</p>
+                <h3 className="text-white font-bold mb-2">13 שנות מומחיות</h3>
+                <p className="text-sm text-gray-400">עשור של ניסיון במנועי AI, אוטומציה וארכיטקטורת מערכות מורכבות.</p>
               </div>
             </div>
           </div>
@@ -69,7 +69,7 @@ const SodaPartner = () => {
               <span>פרויקטים ומידע נוסף</span>
             </h2>
             <p className="text-gray-400 mb-8">
-              ניתן לקרוא על אחד הפרויקטים המורכבים שסודה בנתה במסמך הבא, או לבקר באתר החברה:
+              ניתן לקרוא על אחד הפרויקטים שסודה בנתה במסמך הבא, או לבקר באתר החברה:
             </p>
             <div className="flex flex-col md:flex-row gap-4">
               <GoldButton 
